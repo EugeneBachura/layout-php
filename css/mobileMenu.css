@@ -1,0 +1,99 @@
+@media screen and (min-width: 901px) {
+  #mobileMenu,
+  #menuOpen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  header,
+  footer {
+    width: 100%;
+  }
+}
+
+#mobileMenu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  margin-left: calc(-450px - 100%);
+  margin-top: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px #8b8b8b;
+  box-shadow: 0px 0px 10px 0px #8b8b8b;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  width: 450px;
+  height: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+#mobileMenu > div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.5rem;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.firstPart nav {
+  margin-top: 3rem;
+}
+
+.mobileContacts * {
+  color: #ffffff;
+}
+
+#mobileMenu ul {
+  padding: 0;
+}
+
+#mobileMenu ul li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+#mobileMenu ul li a {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.mobileContacts {
+  background-color: #211f2a;
+}
+
+.mobileContacts > div {
+  margin-top: 1rem;
+}
+
+.mobileContacts > div:nth-child(2) {
+  font-size: 1.4rem;
+}
+
+#menuOpen img {
+  height: 50px;
+  width: 50px;
+}
+
+#menuClose img {
+  height: 30px;
+  width: 30px;
+}

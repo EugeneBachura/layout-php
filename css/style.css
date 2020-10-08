@@ -1,0 +1,26 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  font-family: system-ui, Roboto, Arial;
+  color: #000000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  min-width: 520px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button,
+input,
+.mobileMenuIcon {
+  cursor: pointer;
+}

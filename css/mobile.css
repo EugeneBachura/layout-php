@@ -1,0 +1,41 @@
+@media screen and (max-width: 595px) {
+  form > .formItem:nth-child(2) {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bgNews {
+    display: none;
+  }
+  .newsBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: auto;
+  }
+  .newsNav {
+    display: none;
+  }
+
+  .newBlock {
+    width: auto;
+  }
+
+  .footerContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+  .footerMenu ul {
+    margin-top: 70px;
+  }
+
+  .newTitle {
+    max-width: unset;
+  }
+}

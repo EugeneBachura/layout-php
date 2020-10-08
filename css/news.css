@@ -1,0 +1,133 @@
+.news {
+  width: 80%;
+  margin: auto;
+  padding-top: 3em;
+}
+
+.news h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.newsSlider {
+  overflow: hidden;
+  position: relative;
+}
+
+.bgNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*height: 15.8rem;*/
+  position: absolute;
+  width: 100%;
+}
+
+.bgNews > div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 13.7rem;
+  margin: 1em;
+}
+
+.bgNews.first {
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+
+.bgNews.last {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.bgNews.first > div:first-child {
+  background-color: #d51522;
+}
+
+.bgNews.last > div:last-child {
+  background-color: #6f61a0;
+}
+
+.newsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300%;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  position: inherit;
+}
+
+.newBlock {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  border: #9a9a9a 1px solid;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: #ffffff;
+  width: calc( 100% / 3 );
+}
+
+.date {
+  color: #9a9a9a;
+  font-size: 0.8rem;
+  height: 1.5rem;
+}
+
+.newTitle {
+  font-weight: 500;
+  font-size: 1rem;
+  height: 6rem;
+  max-width: 280px;
+}
+
+.newBlock button {
+  padding: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border: solid #d51522 2px;
+  color: #d51522;
+  width: 100%;
+  max-width: 150px;
+}
+
+.rNews {
+  position: absolute;
+  visibility: hidden;
+}
+
+#r1:checked ~ .sliderContaner {
+  margin-left: 0;
+}
+#r2:checked ~ .sliderContaner {
+  margin-left: -100%;
+}
+#r3:checked ~ .sliderContaner {
+  margin-left: -200%;
+}
+
+.newsNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.newsNav > label {
+  width: 5px;
+  height: 5px;
+  border: 2px solid #cacaca;
+  border-radius: 50%;
+  background-color: #cacaca;
+  margin: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}

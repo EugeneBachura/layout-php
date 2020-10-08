@@ -1,0 +1,86 @@
+.welcomeBlock {
+  background-image: url("../pablic/header-pic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcomeBlock > div {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcomContext {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 470px;
+  flex: 0 1 470px;
+}
+
+.formItem > input,
+.formItem > button {
+  padding: 1.2em;
+  border: none;
+  outline: none;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.formItem {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 175px;
+  flex: 0 1 175px;
+  margin-top: 20px;
+}
+
+.formItem:nth-last-child(1) {
+  margin-left: 20px;
+}
+
+.formItem > input {
+  -webkit-box-shadow: 2px 0px 5px 0px black;
+  box-shadow: 2px 0px 5px 0px black;
+  width: calc(100% - 2 * 1.2em);
+}
+
+.formItem > input::-webkit-input-placeholder {
+  color: #9a9a9a;
+}
+
+.formItem > input::-moz-placeholder {
+  color: #9a9a9a;
+}
+
+.formItem > input:-ms-input-placeholder {
+  color: #9a9a9a;
+}
+
+.formItem > input::-ms-input-placeholder {
+  color: #9a9a9a;
+}
+
+.formItem > input::placeholder {
+  color: #9a9a9a;
+}
+
+.formItem > button {
+  background-color: #d51522;
+  color: #ffffff;
+  width: 100%;
+}
