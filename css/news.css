@@ -1,44 +1,17 @@
-.news {
-  width: 80%;
-  margin: auto;
-  padding-top: 3em;
-}
-
-.news h2 {
-  text-align: center;
-  font-size: 1.5em;
-}
-
 .newsSlider {
   overflow: hidden;
   position: relative;
 }
 
 .bgNews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*height: 15.8rem;*/
   position: absolute;
   width: 100%;
 }
 
 .bgNews > div {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  height: 13.7rem;
+  width: calc(100% / 3);
+  height: 13rem;
   margin: 1em;
-}
-
-.bgNews.first {
-  margin-top: -1rem;
-  margin-left: -1rem;
-}
-
-.bgNews.last {
-  margin-top: 1rem;
-  margin-left: 1rem;
 }
 
 .bgNews.first > div:first-child {
@@ -50,9 +23,6 @@
 }
 
 .newsBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 300%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -61,14 +31,9 @@
 }
 
 .newBlock {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
   border: #9a9a9a 1px solid;
-  padding: 1.5rem;
-  margin: 1rem;
   background-color: #ffffff;
-  width: calc( 100% / 3 );
+  width: calc(100% / 3);
 }
 
 .date {
@@ -78,23 +43,32 @@
 }
 
 .newTitle {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   height: 6rem;
   max-width: 280px;
 }
 
 .newBlock button {
-  padding: 1rem;
-  font-size: 0.8rem;
-  border: none;
   outline: none;
   background-color: #ffffff;
-  border: solid #d51522 2px;
-  color: #d51522;
+  border-radius: 0;
   width: 100%;
-  max-width: 150px;
+  max-width: 8em;
+  border-color: #d51522;
+  color: #d51522;
 }
+
+.newBlock button:hover {
+  background-color: #d51522;
+}
+
+
+.newBlock button span {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
 
 .rNews {
   position: absolute;
@@ -112,18 +86,12 @@
 }
 
 .newsNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin-bottom: 4rem;
 }
 
 .newsNav > label {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   border: 2px solid #cacaca;
   border-radius: 50%;
   background-color: #cacaca;

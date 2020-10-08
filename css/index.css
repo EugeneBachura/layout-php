@@ -5,58 +5,37 @@
   background-position: center;
   color: #fff;
   min-height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.welcomeBlock > div {
-  width: 80%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.welcomContext h2 {
+  font-size: 2.1em;
 }
 
-.welcomContext {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 470px;
-  flex: 0 1 470px;
+.welcomContext p {
+  padding-right: 6em;
 }
 
 .formItem > input,
 .formItem > button {
-  padding: 1.2em;
   border: none;
   outline: none;
+  height: 3em;
+  border-radius: 0;
 }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  width: 80%;
+.formItem > button {
+  background-color: #d51522;
 }
 
-.formItem {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 175px;
-  flex: 0 1 175px;
-  margin-top: 20px;
-}
 
-.formItem:nth-last-child(1) {
-  margin-left: 20px;
+.formItem > button > span {
+    font-size: 0.9em;
+    font-weight: 400;
 }
 
 .formItem > input {
-  -webkit-box-shadow: 2px 0px 5px 0px black;
-  box-shadow: 2px 0px 5px 0px black;
-  width: calc(100% - 2 * 1.2em);
+  -webkit-box-shadow: inset 2px 0px 5px 0px black;
+  box-shadow: inset 2px 0px 5px 0px black;
 }
 
 .formItem > input::-webkit-input-placeholder {
@@ -77,10 +56,4 @@ form {
 
 .formItem > input::placeholder {
   color: #9a9a9a;
-}
-
-.formItem > button {
-  background-color: #d51522;
-  color: #ffffff;
-  width: 100%;
 }

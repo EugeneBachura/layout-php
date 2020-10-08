@@ -6,7 +6,7 @@ function get9News($db)
     JOIN (SELECT DISTINCT Date
           FROM news.posts) AS b
     ON a.Date = b.Date
-    ORDER BY date
+    ORDER BY date DESC
     LIMIT 9";
 	$result = array();
     
